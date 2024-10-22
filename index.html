@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>AI Venue Search Portal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 20px;
         }
         header {
             font-size: 24px;
-            margin-bottom: 20px;
+            margin-left: 20px; /* Space between logo and header */
+        }
+        .header-container {
+            display: flex;
+            align-items: center; /* Vertically center the items */
+        }
+        img {
+            max-width: 100px; /* Set a max width for the logo */
+            height: auto; /* Ensure responsive logo */
         }
         iframe {
             width: 100%;
@@ -22,7 +31,10 @@
     </style>
 </head>
 <body>
-    <header>What can I help with</header>
+    <div class="header-container">
+        <img src="https://picocorpcomm.blob.core.windows.net/assets/logostrapline_2x.png" alt="Logo">
+        <header>AI-Powered Venue Search</header>
+    </div>
     <iframe src="app.html" title="App Content"></iframe>
 </body>
 </html>
